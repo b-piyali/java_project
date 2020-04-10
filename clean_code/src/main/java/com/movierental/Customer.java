@@ -1,5 +1,7 @@
 package com.movierental;
 
+import java.util.Collection;
+
 public class Customer {
     private String name;
     private Rentals rentals = new Rentals();
@@ -23,6 +25,7 @@ public class Customer {
     public String htmlStatement() {
         return new HTMLStatement().display(this.getName(), this.rentals);
     }
+
 
 }
 

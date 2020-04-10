@@ -26,9 +26,10 @@
         <module>clean_code</module>
         <module>exception_handling</module>
         <module>code_wars</module>
-        <module>Functional Programming</module>
         <module>coursera_courses</module>
         <module>project_euler</module>
+        <module>collection</module>
+        <module>geeks_for_geeks</module>
     </modules>
 
 
