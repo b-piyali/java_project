@@ -16,7 +16,7 @@ public class BinaryNumbers {
     private static int consecutive1Binary(int n){
         int count=0;
         int preCount=0;
-        int rem=0;
+        int rem;
         int prevRem=1;
         while(n>0){
             rem = n%2;
