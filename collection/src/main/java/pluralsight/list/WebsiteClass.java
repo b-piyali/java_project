@@ -20,7 +20,7 @@ public class WebsiteClass {
 
         System.out.println("Links from stackoverflow.com:");
         urlList.sort(String::compareTo);
-        List<String> firstTwo = urlList.subList(0, 2);
+        //List<String> firstTwo = urlList.subList(0, 2);
         //int remaining = urlList.size() - firstTwo.size();
         urlList.forEach(System.out::println);
 
