@@ -1,0 +1,66 @@
+{
+  "testcase": {
+    "input":{
+      "size": 5,
+      "leap": 3,
+      "values": [ 0, 0, 0, 0, 0 ]
+    },
+    "output":true
+  },
+  "testcase": {
+    "input":{
+      "size": 6,
+      "leap": 5,
+      "values": [ 0, 0, 0, 1, 1, 1 ]
+    },
+    "output":true
+  },
+  "testcase": {
+    "input":{
+      "size": 6,
+      "leap": 3,
+      "values": [ 0, 0, 1, 1, 1, 0]
+    },
+    "output":false
+  },
+  "testcase": {
+    "input":{
+      "size": 3,
+      "leap": 1,
+      "values": [ 0, 1, 0 ]
+    },
+    "output": false
+  },
+  "testcase": {
+    "input": {
+      "size": 6,
+      "leap": 2,
+      "values": [ 0, 1, 0, 1, 0, 1]
+    },
+    "output": true
+  },
+  "testcase": {
+    "input": {
+      "size": 10,
+      "leap": 6,
+      "values": [ 0, 0, 1, 1, 0, 0, 1, 1, 0, 0]
+    },
+    "output": false
+  },
+  "testcase": {
+    "input": {
+      "size": 10,
+      "leap": 3,
+      "values": [ 0, 0, 1, 1, 0, 0, 1, 1, 0, 0]
+    },
+    "output": true
+  },
+  "testcase": {
+    "input": {
+      "size": 9,
+      "leap": 4,
+      "values": [ 0, 1, 1, 0, 0, 1, 1, 0, 1]
+    },
+    "output": true
+  }
+}

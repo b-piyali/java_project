@@ -1,0 +1,14 @@
+{
+  "testcase": {
+    "input": 3,
+    "output": "Weird"
+  },
+  "testcase": {
+    "input": 24,
+    "output": "Not Weird"
+  },
+  "testcase": {
+    "input": 8,
+    "output": "Weird"
+  }
+}
