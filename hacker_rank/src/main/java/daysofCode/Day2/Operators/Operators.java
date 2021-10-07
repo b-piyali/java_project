@@ -1,4 +1,4 @@
-package daysofCode.Day2.Operators;
+package DaysofCode.Day2.Operators;
 
 import java.util.Scanner;
 

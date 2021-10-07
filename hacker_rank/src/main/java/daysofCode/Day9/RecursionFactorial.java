@@ -1,4 +1,4 @@
-package daysofCode.Day9;// created by: bandypiy
+package DaysofCode.Day9;// created by: bandypiy
 // Date: 10/8/2018
 
 import java.io.BufferedWriter;

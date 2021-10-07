@@ -16,7 +16,7 @@ public class RemoveDuplicatesFromSortedList {
             throw new NoSuchElementException();
         ListNode previousNode = head;
         ListNode nextNode = head.next;
-        ListNode tempNode;
+        ListNode tempNode = nextNode;
         while(nextNode!=null){
             if(previousNode.val == nextNode.val){
                 previousNode.next = nextNode.next;

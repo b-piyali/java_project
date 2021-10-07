@@ -1,4 +1,4 @@
-package daysofCode.Day3.conditionalStatements;
+package DaysofCode.Day3.conditionalStatements;
 
 import java.util.Scanner;
 

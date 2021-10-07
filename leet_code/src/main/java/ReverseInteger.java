@@ -28,6 +28,6 @@ public class ReverseInteger {
             pre_reverseInt = reverseInt;
             x = x/10;
         }
-        return (negativeFlag)? -reverseInt : reverseInt;
+        return (negativeFlag == true)? -reverseInt : reverseInt;
     }
 }

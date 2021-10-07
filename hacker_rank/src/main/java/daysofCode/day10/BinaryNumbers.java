@@ -1,4 +1,4 @@
-package daysofCode.day10;// created by: bandypiy
+package DaysofCode.Day10;// created by: bandypiy
 // Date: 10/8/2018
 
 import java.util.Scanner;
@@ -16,7 +16,7 @@ public class BinaryNumbers {
     private static int consecutive1Binary(int n){
         int count=0;
         int preCount=0;
-        int rem;
+        int rem=0;
         int prevRem=1;
         while(n>0){
             rem = n%2;

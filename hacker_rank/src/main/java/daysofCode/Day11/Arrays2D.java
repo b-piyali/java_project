@@ -1,4 +1,4 @@
-package daysofCode.Day11;// created by: bandypiy
+package DaysofCode.Day11;// created by: bandypiy
 // Date: 10/9/2018
 
 import java.util.Scanner;

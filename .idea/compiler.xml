@@ -7,21 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="leet_code" />
-        <module name="coursera_courses" />
-        <module name="design_pattern" />
-        <module name="generics" />
         <module name="data_tructure" />
-        <module name="collection" />
-        <module name="functionalProgramming" />
-        <module name="geeks_for_geeks" />
-        <module name="exception_handling" />
-        <module name="clean_code" />
-        <module name="hacker_earth" />
         <module name="hacker_rank" />
+        <module name="design_pattern" />
         <module name="project_euler" />
-        <module name="algo" />
         <module name="code_wars" />
+        <module name="collection" />
         <module name="concurrency" />
+        <module name="geeks_for_geeks" />
+        <module name="geeksforgeeks" />
+        <module name="hacker_earth" />
+        <module name="generics" />
+        <module name="clean_code" />
+        <module name="coursera_courses" />
+        <module name="functionalProgramming" />
+        <module name="exception_handling" />
+        <module name="algo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
