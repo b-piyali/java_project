@@ -1,4 +1,4 @@
-package daysofCode.day13;
+package days_of_code.day13;
 
 public class Variables {
     public static void main( String [] args )

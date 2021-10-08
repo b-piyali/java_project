@@ -1,4 +1,4 @@
-package daysofCode.Day15;
+package days_of_code.Day15;
 
 public class Node {
     int data;

@@ -102,6 +102,40 @@ public class SinglyLinkedList {
         return previous;
     }
 
+    static boolean compareLists(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {
+        while (head1 != null && head2 != null && head1.data == head2.data) {
+            head1 = head1.next;
+            head2 = head2.next;
+        }
+        return head1 == head2;
+    }
+
+    public static int getNode(SinglyLinkedListNode llist, int positionFromTail) {
+        SinglyLinkedListNode current = llist;
+        SinglyLinkedListNode temp = llist;
+        if (llist == null)
+            return 0;
+        for (int i = 0; i < positionFromTail; i++)
+            temp = temp.next;
+
+        while (temp.next != null) {
+            current = current.next;
+            temp = temp.next;
+        }
+        return current.data;
+    }
+
+    public static SinglyLinkedListNode removeDuplicates(SinglyLinkedListNode llist) {
+        SinglyLinkedListNode current = llist;
+        while (current.next != null) {
+            if (current.next.data == current.data)
+                deleteNode(current);
+            else
+                current = current.next;
+        }
+        return llist;
+    }
+
     public static void main(String[] args) {
         SinglyLinkedList llist = new SinglyLinkedList();
 

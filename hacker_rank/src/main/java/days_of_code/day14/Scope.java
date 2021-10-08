@@ -1,4 +1,4 @@
-package daysofCode.day14;
+package days_of_code.day14;
 
 public class Scope {
     private int[] elements;

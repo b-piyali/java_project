@@ -1,4 +1,4 @@
-package daysofCode.day12;
+package days_of_code.day12;
 
 public class Person {
     protected String firstName;
