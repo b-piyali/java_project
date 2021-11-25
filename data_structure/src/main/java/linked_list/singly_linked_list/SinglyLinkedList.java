@@ -136,6 +136,45 @@ public class SinglyLinkedList {
         return llist;
     }
 
+    static SinglyLinkedListNode mergeLists(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {
+//Merge two sorted linked lists
+        SinglyLinkedListNode newList = null;
+        while (head1 != null || head2 != null) {
+            if ((head1 != null && head2 != null && head1.data <= head2.data) || head2 == null) {
+                newList = insertNodeAtTail(newList, head1.data);
+                head1 = head1.next;
+            } else {
+                newList = insertNodeAtTail(newList, head2.data);
+                head2 = head2.next;
+            }
+        }
+        return newList;
+    }
+
+    static int findMergeNode(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {
+//Find Merge Point of Two Lists
+        SinglyLinkedListNode currentA = head1;
+        SinglyLinkedListNode currentB = head2;
+
+        //Do till the two nodes are the same
+        while (currentA != currentB) {
+            //If you reached the end of one list start at the beginning of the other one
+            // //currentA
+            if (currentA.next == null) {
+                currentA = head2;
+            } else {
+                currentA = currentA.next;
+            }
+            //currentB
+            if (currentB.next == null) {
+                currentB = head1;
+            } else {
+                currentB = currentB.next;
+            }
+        }
+        return currentB.data;
+    }
+
     public static void main(String[] args) {
         SinglyLinkedList llist = new SinglyLinkedList();
 

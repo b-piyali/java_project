@@ -40,10 +40,46 @@ public class DoublyLinkedList {
     }
 
     public static DoublyLinkedListNode sortedInsert(DoublyLinkedListNode llist, int data) {
-        // Write your code here
+        DoublyLinkedListNode preNode, current = llist;
+        DoublyLinkedListNode node = new DoublyLinkedListNode(data);
+
+        if (llist == null)
+            return node;
+        while (current != null) {
+            if (current.data > data) {
+                if (current.prev == null) {
+                    current.prev = node;
+                    node.next = current;
+                    return node;
+                }else {
+                    preNode = current.prev;//4
+                    preNode.next = node;//5
+                    node.next = current;//6
+                    node.prev = preNode;//4
+                    current.prev = node;//5
+                    break;
+                }
+            }else if(current.next == null){
+                current.next = node;
+                node.prev = current;
+                break;
+            }
+            current = current.next;
+        }
         return llist;
     }
 
+    public static DoublyLinkedListNode reverse(DoublyLinkedListNode llist) {
+        // Write your code here
+        DoublyLinkedListNode newList = null;
+        while (llist != null) {
+            DoublyLinkedListNode nextElement = llist.next;
+            llist.next = newList;
+            newList = llist;
+            llist = nextElement;
+        }
+        return newList;
+    }
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {

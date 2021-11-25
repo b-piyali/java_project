@@ -1,5 +1,6 @@
 package ds.array.game1d;
 
+import array.game1d.OneDArray;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
