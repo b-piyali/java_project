@@ -13,7 +13,9 @@
         <module name="project_euler" />
         <module name="code_wars" />
         <module name="collection" />
+        <module name="oreilly" />
         <module name="concurrency" />
+        <module name="tech_gig" />
         <module name="geeks_for_geeks" />
         <module name="geeksforgeeks" />
         <module name="hacker_earth" />
@@ -22,6 +24,7 @@
         <module name="coursera_courses" />
         <module name="functionalProgramming" />
         <module name="exception_handling" />
+        <module name="udemy" />
         <module name="algo" />
       </profile>
     </annotationProcessing>

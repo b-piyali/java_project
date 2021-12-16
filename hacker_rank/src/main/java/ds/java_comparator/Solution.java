@@ -1,11 +1,8 @@
 package ds.java_comparator;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Solution {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        /*Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
 
         Player[] player = new Player[n];
@@ -19,6 +16,7 @@ public class Solution {
         Arrays.sort(player, checker);
         for (int i = 0; i < player.length; i++) {
             System.out.printf("%s %s\n", player[i].name, player[i].score);
-        }
+        }*/
+
     }
 }
