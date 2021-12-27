@@ -1,4 +1,4 @@
-package java_9_concurrency.chapter1;
+package java_9_concurrency.chapter1.thread_pool_executor;
 
 import java.util.Date;
 import java.util.List;
