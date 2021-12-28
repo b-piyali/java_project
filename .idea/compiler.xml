@@ -21,6 +21,7 @@
         <module name="hacker_earth" />
         <module name="generics" />
         <module name="clean_code" />
+        <module name="scaler" />
         <module name="coursera_courses" />
         <module name="functionalProgramming" />
         <module name="exception_handling" />
