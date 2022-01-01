@@ -6,7 +6,7 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package leetCode.arrayAndString.array;
+package array_and_string.array;
 
 import java.util.Arrays;
 

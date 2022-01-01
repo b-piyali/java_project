@@ -26,7 +26,4 @@ public class WarBetweenOddEven {
             System.out.println("Tied");
     }
 
-    /*public void run(){
-        for(int )
-    }*/
 }
