@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test;
+import show_primer.SumDigits;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
