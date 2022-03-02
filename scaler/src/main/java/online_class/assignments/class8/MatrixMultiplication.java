@@ -9,12 +9,12 @@ public class MatrixMultiplication {
         int bRowLen = B.size();
         int bColLen = B.get(0).size();
         if (aColLen == bRowLen) {
-            for (ArrayList<Integer> integers : A) {
+            for (ArrayList<Integer> aRows : A) {
                 ArrayList<Integer> rows = new ArrayList<>();
                 for (int j = 0; j < bColLen; j++) {
                     int sum = 0;
                     for (int k = 0; k < bRowLen; k++) {
-                        sum += integers.get(k) * B.get(k).get(j);
+                        sum += aRows.get(k) * B.get(k).get(j);
                     }
                     rows.add(sum);
                 }

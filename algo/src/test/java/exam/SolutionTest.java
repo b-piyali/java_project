@@ -1,0 +1,6 @@
+package exam;
+
+
+class SolutionTest {
+
+}

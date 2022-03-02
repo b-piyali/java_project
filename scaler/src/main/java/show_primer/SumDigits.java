@@ -4,14 +4,15 @@ import java.util.Scanner;
 
 public class SumDigits {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-        int[] nums = new int[t];
-        for (int i = 0; i < t; i++) {
-            nums[i] = sc.nextInt();
-        }
-        for (int i = 0; i < t; i++) {
-            System.out.println(sumDigit(nums[i]));
+        try(Scanner sc = new Scanner(System.in)) {
+            int t = sc.nextInt();
+            int[] nums = new int[t];
+            for (int i = 0; i < t; i++) {
+                nums[i] = sc.nextInt();
+            }
+            for (int i = 0; i < t; i++) {
+                System.out.println(sumDigit(nums[i]));
+            }
         }
     }
 
