@@ -1,5 +1,6 @@
 package online_class.assignments.class5;
 
+import online_class.arrays.SumOddEvenIndexed;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

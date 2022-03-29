@@ -3,35 +3,29 @@ package problem42;
 public class TrappingRainWater {
     public int trap(int[] height) {
         int count = 0;
-        int maxLeft = 0;
-        int maxRight = 0;
+        int maxLeft = height[0];
         int len = height.length;
-        int maxIndex = -1;
-        int maxNum = 0;
+        int maxRight = height[len-1];
+        int maxIndex = 0;
+        int maxNum = height[0];
 
-        for (int i = 0; i < len; ++i) {
+        for (int i = 1; i < len; ++i) {
             if (height[i] > maxNum) {
                 maxIndex = i;
                 maxNum = height[i];
             }
         }
 
-        for (int i = 0; i < maxIndex; ++i) {
+        for (int i = 1; i < maxIndex; ++i) {
             maxLeft = Math.max(maxLeft, height[i]);
-            int support = maxLeft;
-            if (support <= height[i])
-                count += 0;
-            else
-                count += support - height[i];
+            if (maxLeft > height[i])
+                count += maxLeft - height[i];
         }
 
-        for (int i = len - 1; i > maxIndex; --i) {
+        for (int i = len - 2; i > maxIndex; --i) {
             maxRight = Math.max(maxRight, height[i]);
-            int support = maxRight;
-            if (maxRight <= height[i])
-                count += 0;
-            else
-                count += support - height[i];
+            if (maxRight > height[i])
+                count += maxRight - height[i];
         }
         return count;
     }

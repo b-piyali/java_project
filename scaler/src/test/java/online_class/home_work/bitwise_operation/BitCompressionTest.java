@@ -1,5 +1,6 @@
 package online_class.home_work.bitwise_operation;
 
+import online_class.bit_manipulations.BitCompression;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
