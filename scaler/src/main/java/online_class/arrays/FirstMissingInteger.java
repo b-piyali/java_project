@@ -1,10 +1,12 @@
 package online_class.arrays;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class FirstMissingInteger {
     public int firstMissingPositive(ArrayList<Integer> A) {
         int len = A.size();
+        Collections.sort(A);
         for (int i = 1; i < len; ++i) {
             while (A.get(i) > 0 && A.get(i) < len && A.get(i) != (i + 1)) {
                 int val = A.get(i);

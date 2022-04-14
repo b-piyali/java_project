@@ -1,11 +1,10 @@
 package online_class.assignments.class8;
 
+import online_class.matrix.RotateMatrix;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class RotateMatrixTest {
     RotateMatrix matrix = new RotateMatrix();

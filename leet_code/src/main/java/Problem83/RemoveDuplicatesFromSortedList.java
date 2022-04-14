@@ -2,49 +2,50 @@ package Problem83;
 // created by: bandypiy
 // Date: 10/16/2018
 
-import java.util.NoSuchElementException;
+import listNode.ListNode;
 
 public class RemoveDuplicatesFromSortedList {
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
+
     ListNode headNode = null;
+
     public ListNode deleteDuplicates(ListNode head) {
-        if(head == null)
-            throw new NoSuchElementException();
+        if (head == null)
+            return null;
+
         ListNode previousNode = head;
         ListNode nextNode = head.next;
-        ListNode tempNode = nextNode;
-        while(nextNode!=null){
-            if(previousNode.val == nextNode.val){
+        ListNode tempNode;
+
+        while (nextNode != null) {
+            if (previousNode.val == nextNode.val) {
                 previousNode.next = nextNode.next;
                 tempNode = nextNode;
                 nextNode = nextNode.next;
                 tempNode.next = null;
-            }else {
+            } else {
                 previousNode = nextNode;
                 nextNode = nextNode.next;
             }
         }
         return head;
     }
-    public void add(int value){
+
+    public void add(int value) {
         ListNode newNode = new ListNode(value);
-        if(headNode != null)
+        if (headNode != null)
             newNode.next = headNode;
         headNode = newNode;
     }
 
-    private void print(){
-        for(ListNode curr = headNode; curr != null; curr = curr.next)
+    private void print() {
+        for (ListNode curr = headNode; curr != null; curr = curr.next)
             System.out.println(curr.val);
         System.out.println("*********************");
     }
+
     public static void main(String[] args) {
         RemoveDuplicatesFromSortedList linkedList = new RemoveDuplicatesFromSortedList();
-        for(int i=0; i<10; i++) {
+        for (int i = 0; i < 10; i++) {
             linkedList.add(i);
             linkedList.add(i);
         }

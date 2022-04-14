@@ -9,6 +9,7 @@ public class ValidSudoku {
         Set<String> sudokuVals = new HashSet<>();
         for (int i = 0; i < A.size(); i++) {
             String str = A.get(i);
+
             for (int j = 0; j < str.length(); j++) {
                 char ch = str.charAt(j);
                 if (ch != '.') {
